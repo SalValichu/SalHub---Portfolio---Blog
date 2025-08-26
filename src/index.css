@@ -1,3 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+	background: #F8F8F8;
+	color: #222;
+	font-family: 'Inter', sans-serif;
+	letter-spacing: -0.01em;
+	font-size: 18px;
+	transition: background 0.4s, color 0.4s;
+}
+
+body.dark {
+	background: #0C0A14;
+	color: #FAFAFA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 900;
+	color: #FAFAFA;
+	letter-spacing: -0.02em;
+}

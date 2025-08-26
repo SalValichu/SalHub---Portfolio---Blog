@@ -28,7 +28,7 @@ function App() {
     <Router>
       <Loader show={loading} />
       <div className={darkMode ? "dark bg-gray-950 text-white min-h-screen" : "bg-gray-50 text-gray-900 min-h-screen"}>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+  <Header darkMode={darkMode} />
         <main className="pt-4 pb-24">
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />
@@ -37,7 +37,7 @@ function App() {
             <Route path="/contact" element={<Contact darkMode={darkMode} />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
     </Router>
   );

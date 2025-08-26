@@ -10,7 +10,7 @@ function getGreeting() {
   return "Good evening";
 }
 
-export default function Header({ darkMode, setDarkMode }) {
+export default function Header({ darkMode }) {
   const [greeting, setGreeting] = useState(getGreeting());
 
   useEffect(() => {
@@ -36,17 +36,6 @@ export default function Header({ darkMode, setDarkMode }) {
   <Nav darkMode={darkMode} />
       </div>
       {/* Dark/Light mode toggle */}
-      <button
-        className={`absolute top-4 right-4 z-20 rounded-full p-2 shadow-lg transition-colors duration-300 border-2 ${darkMode ? "bg-gray-900 border-gray-700 hover:bg-gray-800" : "bg-white border-gray-300 hover:bg-gray-100"}`}
-        onClick={() => setDarkMode((d) => !d)}
-        aria-label="Toggle dark mode"
-      >
-        {darkMode ? (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="5" fill="currentColor" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m8.66-8.66l-.71.71M4.05 4.05l-.71.71M21 12h-1M4 12H3m16.24 4.24l-.71-.71M6.34 19.66l-.71-.71" /></svg>
-        ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="5" fill="currentColor" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" /></svg>
-        )}
-      </button>
       {/* Cube spin animation */}
       <style>{`
         @keyframes cube-spin {

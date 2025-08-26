@@ -1,8 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Project 1",
-    "description": "Test!",
-    "link": "#"
+    "title": "Testing 1",
+    "description": "BlEHHH",
+    "tech": ["React", "Vite", "Tailwind", "Framer Motion"],
+    "source": "https://github.com/SalValichu/",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "title": "Testing 2",
+    "description": "bleh bleh bleh",
+    "tech": ["React", "Tailwind", "Markdown"],
+    "source": "https://github.com/SalValichu/",
+    "image": ""
   }
 ]
