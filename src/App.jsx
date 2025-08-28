@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Loader from "./components/Loader";
 
+
 import { useState, useEffect } from "react";
 
 function App() {
@@ -26,9 +27,10 @@ function App() {
 
   return (
     <Router>
+
       <Loader show={loading} />
       <div className={darkMode ? "dark bg-gray-950 text-white min-h-screen" : "bg-gray-50 text-gray-900 min-h-screen"}>
-  <Header darkMode={darkMode} />
+        <Header darkMode={darkMode} />
         <main className="pt-4 pb-24">
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />

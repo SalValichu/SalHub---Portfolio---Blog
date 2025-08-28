@@ -1,18 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Testing 1",
-    "description": "BlEHHH",
-    "tech": ["React", "Vite", "Tailwind", "Framer Motion"],
-    "source": "https://github.com/SalValichu/",
-    "image": ""
-  },
-  {
-    "id": 2,
-    "title": "Testing 2",
-    "description": "bleh bleh bleh",
-    "tech": ["React", "Tailwind", "Markdown"],
-    "source": "https://github.com/SalValichu/",
-    "image": ""
+    "title": "Roblox Skies MACOS",
+    "description": "Roblox Custom Skies",
+    "tech": ["Shell"],
+    "source": "https://github.com/SalValichu/Roblox-Skies-MACOS",
+    "image": "/roblox-skies-macos.png"
   }
 ]
